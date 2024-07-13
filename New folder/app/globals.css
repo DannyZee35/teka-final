@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Ysabeau+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+ 
+.gradient-border{
+    border: 1px solid rgba(255, 255, 255, 0.201841);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.147099);
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #4299e1; /* Change color as needed */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+.customAnimation {
+ 
+  
+ 
+    background-image: linear-gradient(44.86deg, #4B25EA 8.24%, #BD18E6 53.89%, #FB590E 99.36%) !important;
+    animation: gradient 15s ease infinite !important;
+    background-size: 400% 400%;
+    margin-top: -110px;
+  
+ 
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
